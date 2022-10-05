@@ -1,0 +1,22 @@
+input1 = ""  # Initializing the input
+Nums = []  # Initializing the list of numbers
+
+while input1 != 999:  # This will take input until the user enters 999
+    input1 = int(input("Enter numbers (999 to quit) : "))
+    if input1 == 999:  # This if statement is necessary to make sure 999 is not added into the list
+        break
+    Nums += [input1]  # Adds every input into a continuing list
+
+print(Nums)  # Print the list
+
+
+maxNum = 0  # Initializing the Maximum Number
+
+
+for num in Nums:  # for every number in Nums(list)
+    if (num == 0) and (num % 2 == 0):  # if the iterated number is equal to 0 and even initialize it as maxNum
+        maxNum = num
+    elif (num != 0) and (num > maxNum) and (num % 2 == 0):  # if the iterated number is not equal to 0, greater than the previous maxNum, and even update maxNum
+        maxNum = num
+
+print(maxNum)  # Print the Maximum number 
