@@ -1,0 +1,13 @@
+user_input = input()  # take numbers in as string
+
+Nums = user_input.split()  # Split numbers into separate strings
+
+intnums = []  # initialize list
+for token in Nums:  # for each number in list
+    intnums.append(int(token))  # add each number to an integer type list intnums
+
+
+rounded_avg = round(sum(intnums) / len(intnums))
+print(rounded_avg, max(intnums))
+
+
