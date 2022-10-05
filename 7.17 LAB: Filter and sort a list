@@ -1,0 +1,24 @@
+# This is a long way of this code, Want to develop a shorter version. 
+
+
+user_input = input()  # take numbers in as string
+
+Nums = user_input.split()  # Split numbers into separate strings
+
+intnums = []  # initialize list
+for token in Nums:  # for each number in list
+    intnums.append(int(token))  # add each number to an integer type list intnums
+
+newlist = []
+
+for num in intnums:
+    if num < 0:
+        continue
+    newlist += [num]
+
+newlist.sort()
+s = ' '.join(str(x) for x in newlist)  # convert the list into a string
+print(s, end=" ")
+
+
+
