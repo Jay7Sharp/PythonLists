@@ -1,0 +1,7 @@
+num_guesses = int(input())
+user_guesses = []
+
+for guess in range(num_guesses):  # for every guess in the input
+    user_guesses.append(int(input())) # add each guess to the list
+
+print('user_guesses:', user_guesses)
