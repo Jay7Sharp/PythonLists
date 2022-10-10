@@ -1,0 +1,9 @@
+# write a program that changes negative numbers to 22
+
+mylist = [121, 13, 14, -21, -32, -22, 0, 2]
+
+for ind in range(len(mylist)): # use this for loop format to change index, other formats cause errors 
+    if mylist[ind] > 0:
+        mylist[ind] = -999
+
+print(mylist)
